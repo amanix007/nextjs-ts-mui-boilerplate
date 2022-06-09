@@ -17,6 +17,8 @@ yarn husky install
 yarn dev
 ```
 
+https://gist.github.com/amanix007/ca12770ce81292dad1166c3d88d85b09
+
 ## Features
 
 - ESLint and Prettier are integrated with VSCode to fix and format code on save (you need eslint and prettier VSCode plugins)

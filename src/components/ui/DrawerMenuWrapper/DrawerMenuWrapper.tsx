@@ -1,6 +1,7 @@
 import * as React from 'react'
+import GridViewIcon from '@mui/icons-material/GridView'
 import Typography from '@mui/material/Typography'
-import CssBaseline from '@mui/material/CssBaseline'
+
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 
@@ -80,6 +81,11 @@ type Props = {
 }
 const menuList = [
   {
+    text: 'Overview',
+    icon: <GridViewIcon />,
+    href: '/dashboard-overview',
+  },
+  {
     text: 'User Account',
     icon: <SupervisedUserCircleIcon />,
     href: '/user-account',
@@ -99,7 +105,6 @@ export default function DrawerMenu({ children }: Props) {
   const theme = useTheme()
   return (
     <>
-      <CssBaseline />
       <AppBar position="fixed" open={open}>
         <Toolbar>
           <IconButton
